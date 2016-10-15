@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task-20</title>
+</head>
+<style type="text/css">
+#text-input {
+	font-size: 20px;
+}	
+
+#content div{
+	margin: 20px 5px 0 5px;
+	padding: 5px;
+	font-size: 25px;
+	color: #234;
+	height: 25px;
+	background: #FF6C6C;
+	display: inline-block;
+	border-radius: 20px;
+	line-height: 25px;
+
+}
+.select {
+	background: red;
+	border-radius: 20px;
+}
+</style>
+
+<body>
+	<textarea rows="8" cols="25" id="text-input"></textarea> 
+	<input type="button" id="input" value="insert">
+	<input type="text" id="text-search">
+	<input type="button" id="search" value="search">
+
+	<div id="content">
+		
+	</div>
+	<script type="text/javascript" src="Task_20.js"></script>
+	<script type="text/javascript">
+	/*
+		$ = function (elem) {
+			return document.querySelector(elem);
+		}
+
+		var arrData = []
+
+		$("#input").onclick = function () {			
+			var arrWrod = $("#text-input").value.split(/[^0-9a-zA-Z\u4e00-\u9fa5$]+/).filter(function (e) {
+				if (e !== null && e.length > 0) {
+					return true;
+				} else {
+					return false;
+				}
+			})
+			arrData = arrData.concat(arrWrod)
+			render();
+		};
+
+		$("#search").onclick = function () {
+			var str = $("#text-search").value.trim();
+			//console.log(str);
+			render(str);
+		}
+			
+		var render = function (str) {
+			$("#content").innerHTML = arrData.map(function (div) {
+				if (str != null && str.length > 0) {
+					div = div.replace(new RegExp(str, "g"),
+				 '<span class=select>' +div+ '</span>');
+				}
+				return '<div>' + div + '</div>'
+			}).join('');
+		}
+		
+		*/
+	</script>
+</body>
+</html>

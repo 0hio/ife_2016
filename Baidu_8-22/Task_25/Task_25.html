@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task-25</title>
+</head>
+<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	body {
+		background: #000;
+	}
+	#wrap {
+		width: 1000px;
+		margin: 50px auto;
+		text-align: left;
+		border: 1px solid #FFF;
+		font-size: 25px;
+		color: lime;
+		background: #000;
+	}
+
+	.layout-1 {
+		margin: 20px auto;
+	}
+
+	.layout-1 div{
+		padding-left: 30px;
+		margin: 5px 0;
+	}
+
+	#wrap div span:first-child , .layout-1 span:first-child{
+		cursor: pointer;
+		margin-left: 5px;
+	}
+
+
+	.btn {
+		color:lime;
+		width: 360px;
+		margin: 15px auto 0 auto;
+	}
+	.btn input {
+		background: white;
+		font-size: 20px;
+		border: none;
+	}
+
+	.add {
+		color: blue;
+	}
+	.del {
+		color:red;
+	}
+
+	.add , .del{
+		display:s;
+		cursor: pointer;
+		font-size: 35px;
+
+		display: none;
+	}
+
+	#wrap div > span+span:hover .add, #wrap div > span+span:hover .del{
+		
+		display: inline;
+	}
+	.found {
+		color: red;
+	}
+
+
+</style>
+<body>
+
+
+<div class="btn">
+	<input type="text">
+	<input type="button" value="Search">
+</div>
+
+<div id="wrap">
+<div class="layout-1">
+<span>ˇˇˇˇ </span>
+<span>
+C:
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+<div>
+<span>ˇˇˇˇ </span>
+<span>
+Windows
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+<div>
+<span>ˇˇˇˇ </span>
+<span>
+System32
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+<div>
+<span>ˇˇˇˇ </span>
+<span>
+drivers
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+<div>
+<span>>>> </span>
+<span>
+etc
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+</div>
+<div>
+<span>>>> </span>
+<span>
+zh-CN
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+</div>
+<div>
+<span>>>> </span>
+<span>
+en-US
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div>
+<span>>>> </span>
+<span>
+Setup
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+</div>
+</div>
+<div class="layout-1">
+<span>ˇˇˇˇ </span>
+<span>
+D:
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+<div>
+<span>ˇˇˇˇ </span>
+<span>
+Baidu
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+<div>
+<span>>>> </span>
+<span>
+Tieba
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+</div>
+<div>
+<span>ˇˇˇˇ </span>
+<span>
+Yunpan
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+<div>
+<span>>>> </span>
+<span>
+A:
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+</div>
+<div>
+<span>>>> </span>
+<span>
+B:
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+</div>
+<div>
+<span>>>> </span>
+<span>
+C:
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="layout-1">
+<span>ˇˇˇˇ </span>
+<span>
+E:
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+<div>
+<span>ˇˇˇˇ </span>
+<span>
+FireFox
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+<div>
+<span>>>> </span>
+<span>
+browser
+<span class="add">+</span>
+<span class="del">×</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+	<script src="Task_25.js"></script>
+</body>
+</html>
+
+
