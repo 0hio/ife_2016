@@ -1,0 +1,191 @@
+*{
+	list-style: none; 
+	text-decoration: none;
+}
+h2
+{
+	font-size: 14px;
+	font-weight: normal;
+	background: #fafafa;
+	padding:10px 30px;
+	margin-top:-2px;
+	margin-bottom: 0;
+}
+body{background: #efefec;}
+.header
+{
+	background: #FFF;
+	width:100%;
+	height:42px;
+	position: fixed;
+	top:0;
+	left:0;
+	list-style: none;
+	text-align: center;
+}
+.header .left
+{
+	height: 100%
+	width: 220px;
+}
+.header input
+{
+	border: none;
+}
+.header .menu
+{
+	background: url(../images/select_top.gif) no-repeat;
+	width:57px;
+	height:42px;
+	float:left;
+	cursor: pointer;
+	margin-left: 10px;
+}
+.search
+{
+	float:left;
+	margin-left:7px;
+	margin-top: 7px;
+}
+.search-left
+{
+	background: url(../images/input_search.gif) no-repeat;
+	float:left;
+	height:28px;
+	width: 104px;
+}
+.search-left input
+{
+	width:100%;
+	margin:3px;
+}
+.search-right
+{
+	background: url(../images/search_btn.gif) no-repeat;
+	width: 29px;
+	height:28px;
+	float:left;
+}
+.center img
+{
+	width:80px;
+	height:35px;
+}
+
+.right 
+{
+	float:right;
+}
+.right > input
+{
+	background: url(../images/top_btn.gif) no-repeat;
+	font-size: 12px;
+	width: 54px;
+	height:30px;
+	margin: 7px 14px 0 0;
+}
+
+.mainbody
+{
+	width: 80%;
+	margin:0 auto;
+	overflow: hidden;
+	margin-top:55px;
+}
+.mainbody > div
+{
+	width:290px;
+	float:left;
+	margin-left: 10px;
+}
+.mainbody div ul li
+{
+	float:left;
+}
+.mainbody div > ul > li
+{
+	border:1px solid #dcdcda;
+}
+
+.content-1 ul li dt
+{
+	width:34px;
+	height:34px;
+	float: left;
+	padding:15px;
+}
+.content-1 ul li dd
+{
+	padding:24px;
+	margin-left: 78px;
+	font-size: 12px;
+	border:;
+}
+
+
+.content-2 ul li dt
+{
+	width:34px;
+	height:34px;
+	float: left;
+	padding:15px;
+}
+.content-2 ul li dd
+{
+	padding:24px;
+	margin-left: 78px;
+	font-size: 12px;
+}
+
+
+.content-3 ul li dt
+{
+	width:34px;
+	height:34px;
+	float: left;
+	padding:15px;
+}
+.content-3 ul li dd
+{
+	padding:24px;
+	margin-left: 78px;
+	font-size: 12px;
+}
+
+
+.content-4 ul li dt
+{
+	width:34px;
+	height:34px;
+	float: left;
+	padding:15px;
+}
+.content-4 ul li dd
+{
+	padding:24px;
+	margin-left: 78px;
+	font-size: 12px;
+}
+
+.footer
+{
+	font-style: 7px;
+	color: #999;
+	margin: 0 auto;
+	clear: both;
+	width: 100%;
+	text-align: center;
+	height:30px;
+	background: #FFF;
+	padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
