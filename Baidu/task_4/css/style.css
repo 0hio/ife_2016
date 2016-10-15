@@ -1,0 +1,27 @@
+*{padding:0; margin:0;}
+
+.main{
+	width: 400px;
+	height: 200px;
+	background: #ccc;
+	position: absolute;
+	overflow: hidden;
+	transform: translate(-50%,-50%);
+	top:50%;
+	left:50%;
+}
+.YB_{
+	height:100px;
+	width:100px;
+	border-radius: 50%;
+	background: #fc0;
+	position: absolute;
+}
+#A_{
+	left:-50px;
+	top:-50px;
+}
+#B_{
+	right:-50px;
+	bottom:-50px;
+}
