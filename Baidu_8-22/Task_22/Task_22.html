@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task-22</title>
+</head>
+<style type="text/css">
+
+	.root {
+		display: flex;
+		margin: 50px auto;
+		width: 1200px;
+		height: 380px;
+		border: 1px solid #234;
+		padding: 25px;
+		background: #FFF;
+	}
+	.child-1 {
+		display: flex;
+		margin: 0 auto;
+		width: 40%;
+		height: 85%;
+		border: 1px solid #234;
+		padding: 25px;
+		background: #FFF;
+	}
+	.child-2 {
+		display: flex;
+		margin: 0px 5px;
+		width: 75%;
+		height: 85%;
+		border: 1px solid #234;
+		padding: 25px;
+		background: #FFF;
+		
+	}
+	.child-3 {
+		display: flex;
+		margin: 30px 5px;
+		width: 50%;
+		height: 60%;
+		border: 1px solid #234;
+		padding: 25px;
+		background: #FFF;
+	}
+
+	#btn {
+		margin: 0 auto;
+		width: 300px;
+		height: 50px;
+	}
+	#btn input {
+		font-size: 35px;
+		margin: 0 12px;
+	}
+
+
+</style>
+<body>
+	<div class="root">
+
+		<div class="child-1">
+			<div class="child-2">
+				<div class="child-3"></div>
+				<div class="child-3"></div>
+			</div>
+			<div class="child-2">
+				<div class="child-3"></div>
+				<div class="child-3"></div>
+			</div>
+		</div>
+
+		<div class="child-1">
+			<div class="child-2">
+				<div class="child-3"></div>
+				<div class="child-3"></div>
+			</div>
+			<div class="child-2">
+				<div class="child-3"></div>
+				<div class="child-3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="btn">
+		<input type="button" value="Pre"></input>
+		<input type="button" value="In"></input>
+		<input type="button" value="Post"></input>
+	</div>
+
+
+	<script src="Task_22.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	#bb {
+		display: inline-flex;
+	}
+	#bb div {
+		width: 15px;
+		background: #000;
+		margin: 0 5px;
+	}
+	.active {
+		font-weight: bold;
+		color: #ffc3c3;
+	}
+	.active1 {
+		font-weight: bold;
+		color: red;
+	}
+</style>
+<body>
+	<div id="bb"></div>
+
+<script type="text/javascript">
+
+
+
+var bb = document.getElementById("bb");
+
+arr = [12,43,65,87,73,98,43,54,13,54,59,15,87,29,76,65,75,86,53,24,53,65,76,24,13,56,87,98,12,46,25,45,65,12,43,65,87,73,98,43,54,13,54,59,15,87,29,76,65,75,86,53,24,53,65,76,24,13,56,87,98,12,46,25,45,65,12,43,65,87,73,98,43,54,13,54,59,15,87,29,76,65,75,86,53,24,53,65,76,24,13,56,87,98,12,46,25,45,65];
+var div = [];
+
+var bubbleSort = function () {
+	var len = arr.length,
+		i = 0,
+		j = 0,
+		temp,
+		clear = null;
+
+
+
+	clear = setInterval(run, 5)
+
+	function run () {
+		if (i < len) {
+			if (j < len - i - 1) {
+				if (arr[j] > arr[j+1]) {
+					temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+					
+					divChange();		
+					div[j].className = "active1";
+					
+				
+				}
+				j++;
+				return;
+			} else {
+				j = 0;
+			}
+			i++;
+		} else {
+			clearInterval(clear);
+		}
+	}
+	
+}
+
+
+var divChange = function () {
+	var arrLen = arr.length;
+
+	var text = "";
+
+	div = [];
+
+	bb.innerHTML = "";
+	for (var i=0; i<arrLen; i++) {
+		var oDiv = document.createElement("div");
+		text = arr[i]+",";
+		oDiv.innerHTML = text;
+		bb.appendChild(oDiv);
+	}
+
+	var bbDiv = bb.getElementsByTagName("div");
+	for (let i=0; i<bbDiv.length; i++) {
+		div[i] = bbDiv[i];
+
+	}
+	
+
+	for (let i=0; i<div.length; i++) {
+		div[i].className = "";
+		div[i].style.height = arr[i] + "px";
+		div[i].innerHTML = "";
+	}
+
+
+	
+
+}
+
+
+
+divChange();
+bubbleSort();
+
+
+		
+</script>
+</body>
+</html>
