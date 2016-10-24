@@ -58,17 +58,21 @@ var pageState = {
 function renderChart() {
   var oForm = document.getElementById("aqi-chart-wrap");
   oForm.innerHTML = "";
-  var color, text="";
-
+  var colors = ["#50cc7b", "#8bfcbf" , "#b8807c", "#387371","#c8051e", "#6ec1e3", "#f7cc31", "#a3af78", "#70b2a3"], 
+      text="",
+      colorsIndex = 0;
   if (pageState.nowGraTime === "day") {
     for (var DataDate in chartData[pageState.nowSelectCity]) {
-      color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+      currColor = colors[colorsIndex];
+      colorsIndex = colorsIndex<(colors.length-1) ? colorsIndex+1 : colorsIndex=0;
+
       text +=  
             "<div title='" +DataDate+ " 空气质量: " + 
       chartData[pageState.nowSelectCity][DataDate] + "'class='" 
       +pageState.nowGraTime+ "' style='height:"
       +chartData[pageState.nowSelectCity][DataDate]+
-      "; background-color:"+color+"'> </div>";
+      "; background-color:"+currColor+"'> </div>";
+      
     }
   }
 
@@ -81,7 +85,8 @@ function renderChart() {
 
     for (var i in chartData[pageState.nowSelectCity]) {
       j++;
-      sum += chartData[pageState.nowSelectCity][i]  //console.log(i)
+
+      sum += chartData[pageState.nowSelectCity][i];
       if (j === 7) {
         week_sum++;
         mean = sum / 7;
@@ -92,12 +97,14 @@ function renderChart() {
     }
 
     for (var i=0; i<=week_sum; i++) {
-      color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+      currColor = colors[colorsIndex];
+      colorsIndex = colorsIndex<(colors.length-1) ? colorsIndex+1 : colorsIndex=0;
+      
       text +=  
             "<div title='第" +(i+1)+ "周平均空气质量: " + 
       mean_final[i] + "'class='" 
       +pageState.nowGraTime+ "' style='height:"
-      +mean_final[i]+ "; background-color:"+color+"'> </div>";
+      +mean_final[i]+ "; background-color:"+currColor+"'> </div>";
     }
   }
 
@@ -128,12 +135,13 @@ function renderChart() {
       } 
 
     for (var i=0; i<month_mean.length; i++) { 
-      color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+      currColor = colors[colorsIndex];
+      colorsIndex = colorsIndex<(colors.length-1) ? colorsIndex+1 : colorsIndex=0;
       text +=  
             "<div title='第" +(i+1)+ "月平均空气质量: " + 
       month_mean[i] + "'class='" 
       +pageState.nowGraTime+ "' style='height:"
-      +month_mean[i]+ "; background-color:"+color+"'> </div>"; 
+      +month_mean[i]+ "; background-color:"+currColor+"'> </div>"; 
     };
   }
   oForm.innerHTML = text;

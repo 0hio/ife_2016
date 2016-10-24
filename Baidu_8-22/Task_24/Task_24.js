@@ -25,7 +25,7 @@ function changeClass (list, text) {
 	var i = 0,
 		btn = $("#btn input"),
 		len = list.length;
-	console.log(list)
+	
 	for (let i=0; i<len; i++) {
 		list[i].style.background = "#FFF";
 	}
@@ -40,13 +40,13 @@ function changeClass (list, text) {
 				if (i !== 0) {
 					list[i-1].style.background = "#FFF";
 				}
-				list[i].style.background = "red";
+				list[i].style.background = "#D9544F";
 				clearInterval(timer);
 				lockedBtn();
 				return ;
 			}
 			
-			list[i].style.background = "#FF6C6C";
+			list[i].style.background = "#337ab7";
 			if (i >= 1) {
 				list[i-1].style.background = "#FFF";
 				}
@@ -59,7 +59,7 @@ function changeClass (list, text) {
 			clearInterval(timer);
 			lockedBtn();
 		}
-	}, 50)
+	}, 500)
 }
 
 function lockedBtn (locked) {
@@ -72,6 +72,17 @@ function lockedBtn (locked) {
 	})
 }
 
+function insertNode () {
+	var oDiv = document.createElement("div");
+	//console.log($("#btn input")[6].value.trim());
+	if ($("#btn input")[6].value.trim() == false) {
+		alert("Don't enter spaces")
+		return
+	};
+	oDiv.innerHTML = $("#btn input")[6].value.trim();
+	selectedDiv.appendChild(oDiv);
+	selector();
+}
 
 function traverse (index) {
 	var list = [],
@@ -83,30 +94,65 @@ function traverse (index) {
 			depth(root_node, list);
 			text = "";
 			changeClass(list, text);
+			lockedBtn(true);
 			break;
 		case 1: 
 			breadth(root_node, list);
-			text = "";
+			text = "";  
 			changeClass(list, text);
+			lockedBtn(true);
 			break;
 		case 3:
-			depth(root_node, list);
-			changeClass(list, text);
+			if (text) {
+				depth(root_node, list);
+				changeClass(list, text);
+				lockedBtn(true);
+			} else {
+				alert("Please enter a nodes name!")
+			}
+			
 			break;	
 		case 4:
-			breadth(root_node, list);
-			changeClass(list, text);
+			if (text) {
+				breadth(root_node, list);
+				changeClass(list, text);
+				lockedBtn(true);
+			} else {
+				alert("Please enter a nodes name!")
+			}
 			break;
 		case 5:
-			selectedDiv.remove();
+			if (selectedDiv) {
+				selectedDiv.remove();
+			}
+
 		 	break;
 		case 7:
-			insertNode();
+			if (selectedDiv) {
+				insertNode();
+			} else {
+				alert("Please selected a div that will be insert the node")
+			}
 			break;
 	}
-	
-	
 }
+
+function selector () {
+	var allNodes = $("div")[0].getElementsByTagName("div");
+	Array.prototype.forEach.call(allNodes, function (div) {
+
+		div.addEventListener("click", function (event) {
+			if (selectedDiv) {
+				selectedDiv.style.background = "#FFF";
+			}
+			event.stopPropagation();
+			div.style.background = "#5AB85C";
+			selectedDiv = div;
+
+		})
+	})
+}
+
 
 var BFindex = 0,
 	selectedDiv;
@@ -117,7 +163,7 @@ var BFindex = 0,
 			btn[i].onclick = function () {
 				traverse(i);
 				//点击遍历过的按钮后,锁定;
-				//lockedBtn(true);
+				
 			}
 
 		}
@@ -129,30 +175,10 @@ var BFindex = 0,
 
 
 
-// 试着用返回 变量;  尽量少用全局变量;
-function selector () {
-	var allNodes = $("div")[0].getElementsByTagName("div");
-	Array.prototype.forEach.call(allNodes, function (div) {
 
-		div.addEventListener("click", function (event) {
-			if (selectedDiv) {
-				selectedDiv.style.background = "#FFF";
-			}
-			event.stopPropagation();
-			div.style.background = "green";
-			selectedDiv = div;
 
-		})
-	})
-	
-}
 
-function insertNode () {
-	var oDiv = document.createElement("div");
-	oDiv.innerHTML = $("#btn input")[6].value.trim();
-	selectedDiv.appendChild(oDiv);
-	selector();
-}
+
 
 
 

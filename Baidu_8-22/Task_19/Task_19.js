@@ -128,7 +128,7 @@ Queue.Fn.bubble = function () {
 	this.bubble.clear = null;
 	this.bubble.clear = setInterval(function () {
 		_this.run();
-		}, 50)
+		}, 40)
 }
 
 
@@ -140,9 +140,10 @@ Queue.Fn.run = function () {
 				this.bubble.temp = this.arr[this.bubble.j];
 				this.arr[this.bubble.j] = this.arr[this.bubble.j+1];
 				this.arr[this.bubble.j+1] = this.bubble.temp;
-				this.classToNull();
+				//this.classToNull();
+				
 				this.renderChart();
-				this.aDiv[this.bubble.j+1].className = "active";
+				//this.aDiv[this.bubble.j+1].className = "active";
 
 			}
 			this.bubble.j += 1;
@@ -157,7 +158,7 @@ Queue.Fn.run = function () {
 	}
 	
 }
-
+/*
 //把aDiv中所有元素的class变成 空；
 Queue.Fn.classToNull = function () {
 	this.arrLen = this.arr.length;
@@ -167,7 +168,8 @@ Queue.Fn.classToNull = function () {
 		this.aDiv[i].className = "";
 	}
 }
-
+*/
+// 取消数值交换时的颜色;
 
 var b = new Queue();
 	

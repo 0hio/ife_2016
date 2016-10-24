@@ -53,18 +53,17 @@ function changeClass () {
 	var i = 0;
 	timer = setInterval(function () {
 		if (i < divList.length) {
-			for (let j=0; j<divList.length; j++) {
-				if (j !== i) {
-					divList[j].style.background = "#FFF";
-				}
-			} 
+			if (i>=1) {
+				divList[i-1].style.background = "#FFF";
+			}
 			
-			divList[i].style.background = "#FF6C6C";
+			divList[i].style.background = "#D9544F";
+
+
 			i++;
 		} else {
-			for (let j=0; j<divList.length; j++) {		
-					divList[j].style.background = "#FFF";
-			}
+			divList[i-1].style.background = "#FFF";
+			console.log(divList);
 			clearInterval(timer);
 			btnSwitch();
 			divList = [];

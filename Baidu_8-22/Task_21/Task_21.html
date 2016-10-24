@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<title>Task-21</title>
 </head>
 <style type="text/css">
@@ -12,41 +13,64 @@
 	#Tag-up-content , #Tag-down-content , #Tag-down-btn{
 		margin-top: 20px;
 	}
+
+
 	#Tag-up-content span, #Tag-down-content span{
 		
-		font-size: 50px;
-		height: 30px;
-		background: #234;
-		color: #D5D5D5;
-		padding: 0 15px;
-		cursor: pointer;
-		margin: 0 10px;
+		margin:0px 2px;
+		font-size: 24px;
+		color: #ECFFF5;
+		border-radius: 7px;
+		padding:5px 10px;
+
 	}
 	#Tag-up-content span:hover {
-		background: #E01F1F;
+		background: #D9534F;
 	}
 
 	#Tag-down-content span {
-		background: #FF6C6C;
+		background-color: #5CB85C;
+	}
+	#Tag-up-content span {
+		background-color:#5BC0DE;
+	}
+
+	#Tag-up {
+	    width: 200px;
+		margin: 0 auto;
+	}
+	#Tag-down {
+		width: 500px;
+		margin: 0 auto;
+		font-size: 23px;
+	}
+	#Tag-down-btn {
+		font-size: 23px;
 	}
 </style>
 <body>
 
-<div id="wrap">
-	<div>Tag: <input type="text" id="Tag-up" ></div>
+<div id="wrap" class="text-center">
+	<div><h3>Tag:</h3>
+	<input type="text" id="Tag-up" class="form-control"></div>
 	<div id="Tag-up-content">
 
 	</div>
 
 	</br>
 
-	<div>Tag: <textarea id="Tag-down"> 
+	<div><h3>Tag:</h3>
+
+	<textarea id="Tag-down" class="form-control" rows="5"> 
 	</textarea>
-	<input type="button" id="Tag-down-btn" value="确认爱好">
+
+	<input type="button" id="Tag-down-btn" value="确认爱好" class="btn btn-primary btn-sm">
+
 	<div id="Tag-down-content">
 		
 	</div>
 </div>
+
 
 <script src="Task_21.js"></script>
 	

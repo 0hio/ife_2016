@@ -16,6 +16,7 @@ var Queue = function () {
 
 	this.oInput.onclick =  function () {
 		_this.insertDiv();
+		_this.sTextInput.value = "";
 	}
 
 	this.oSearch.onclick = function () {

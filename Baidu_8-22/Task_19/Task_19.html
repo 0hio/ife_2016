@@ -3,22 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Task-19</title>
-
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <style type="text/css">
-*{margin: 0; padding: 0;}
 	#content {
 		display: flex;
 		align-items: flex-end;
 		height: 500px;
-		background: #CCC;
 		padding-left: 50px;
+		border: 1px solid #234;
+		width: 90%;
+		margin: 0 auto;
 
 	}
 
 	#content div{
 		width: 20px;
-		background: #000;
+		background: #5CB85C;
 		cursor: pointer;
 		margin:0 3px 100px 3px;
 	}
@@ -26,32 +27,36 @@
 	input {
 		margin: 20px 5px;
 	}
-	input:first-child {
-		margin: 20px 40px;
-	}
 	#content .active {
-		background: #FF6C6C;
+		background: #D9534F;
+	}
+
+	.form-control {
+		width: 100px;
+		margin: 20px auto 0 auto;
+	}
+	input[type="button"] {
+		margin-bottom:20px;
+		font-size: 20px;
 	}
 </style>
-<body>
+<body class="text-center">
 	
-	<input type="text" id="text">
+	<input type="text" id="text" class="form-control">
 
-	<input type="button" value="Left-in" id="li">
-	<input type="button" value="Right-in" id="ri">
-	<input type="button" value="Left-out" id="lo">
-	<input type="button" value="Right-out" id="ro">
+	<input type="button" value="Left-in" id="li" class="btn btn-primary btn-sm">
+	<input type="button" value="Right-in" id="ri" class="btn btn-primary btn-sm">
+	<input type="button" value="Left-out" id="lo" class="btn btn-primary btn-sm"> 
+	<input type="button" value="Right-out" id="ro" class="btn btn-primary btn-sm">
 
-	<input type="button" value="Taxis" id="taxis">
+	<input type="button" value="Taxis" id="taxis" class="btn btn-primary btn-sm">
 	
 
 
 	<div id="content">
-		
+
 	</div>
 
-	
-	<div id="bb"></div>
 
 	<script type="text/javascript" src="Task_19.js"></script>
 </body>

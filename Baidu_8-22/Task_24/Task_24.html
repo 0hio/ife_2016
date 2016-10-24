@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Task-24</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <style type="text/css">
 	div:first-child {
@@ -21,27 +22,26 @@
 	}
 
 	#btn {
-		margin: 0 auto;
-		width: 1200px;
+		margin: 25px auto;
+		width: 1240px;
 		height: 50px;
 		padding-top: 250px
 	}
-	#btn input , #btn2 input{
+	#btn input{
 		font-size: 25px;
 		margin: 15px 15px;
 	}
-
-	#btn2 {
-		margin: 0 auto;
-		width: 1200px;
-		height: 50px;
-		padding-top: 45px
+	.form-control {
+		width: 200px;
+		display: inline;
 	}
-
-
+	
+	.wrap {
+		width: 1400px;
+	}
 </style>
-<body>
-<div>
+<body class="text-center">
+<div class="wrap">
 	<div class="root">
 		Super
 		<div>
@@ -90,15 +90,15 @@
 </div>
 
 	<div id="btn">
-		<input type="button" value="DepthFirst">
-		<input type="button" value="BreadthFirst">
-		<input type="text">
+		<input type="button" value="Depth First" class="btn btn-primary btn-sm">
+		<input type="button" value="Breadth First" class="btn btn-primary btn-sm">
+		<input type="text" class="form-control">
 		
-		<input type="button" value="Depth First Search"></input>
-		<input type="button" value="Breadth First Search"></input>
-		<input type="button" value="Deletes the selected node">
-		<input type="text">
-		<input type="button" value="Inserted under the node which is selected.">
+		<input type="button" value="Depth First Search" class="btn btn-primary btn-sm"></input>
+		<input type="button" value="Breadth First Search" class="btn btn-primary btn-sm"></input>
+		<input type="button" value="Deletes the selected node" class="btn btn-primary btn-sm">
+		<input type="text" class="form-control">
+		<input type="button" value="Inserted under the node which is selected." class="btn btn-primary btn-sm">
 	</div>
 
 

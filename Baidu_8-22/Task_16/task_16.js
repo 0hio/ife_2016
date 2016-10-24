@@ -65,7 +65,7 @@ function renderAqiList() {
 
     	otd1.innerHTML = city;
     	otd2.innerHTML = aqiData[city];
-    	otd3.innerHTML = "<a href='javascript:;' class='del'>Handler</a>";
+    	otd3.innerHTML = "<a href='javascript:;' class='del'>Delete</a>";
     	oTr.appendChild(otd1);
     	oTr.appendChild(otd2);
     	oTr.appendChild(otd3);

@@ -2,23 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>IFE JavaScript Task 01</title>
-    <script src="Task_17.js" defer=true></script>
+    <title>Task_17</title>   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
   </head>
     <style type="text/css">
   .day {
     width:10px;
     margin:0 2px;
     position: relative;
-    top: 50px;
-    left: 50px;
+    left: 60px;
   }
   
   .week {
     width: 95px;
     margin: 0 2px;
     position: relative;
-    top: 50px;
     left: 50px;
   }
 
@@ -26,30 +24,49 @@
     width: 300px;
     margin: 0 2px;
     position: relative;
-    top: 50px;
-    left: 50px;
+    left: 18%;
     
   }
 
   .aqi-chart-wrap {
-    height: 470px;
+    height: 550px;
     text-align: center;
     display: flex;
     align-items: flex-end;
+    width: 1400px;
+    margin: 0 auto;
+    border: 1px solid #234;
+  }
+
+  .form-control {
+    width: 90px;
+    margin: 0 auto 20px auto;
+  }
+  .checkbox-inline {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+  legend {
+    border: none;
+  }
+  #form-gra-time label{
+    margin-top: -20px;
   }
 </style>
 
 <body>
-  <fieldset id="form-gra-time">
+<div class="text-center">
+  <fieldset id="form-gra-time" >
     <legend>请选择日期粒度：</legend>
-    <label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
-    <label>周<input name="gra-time" value="week" type="radio"></label>
-    <label>月<input name="gra-time" value="month" type="radio"></label>
+    <label class="checkbox-inline"><input name="gra-time" value="day" type="radio" checked="checked">日</label>
+    <label class="checkbox-inline"><input name="gra-time" value="week" type="radio">周</label>
+    <label class="checkbox-inline"><input name="gra-time" value="month" type="radio">月</label>
   </fieldset>
+
 
   <fieldset>
     <legend>请选择查看的城市：</legend>
-    <select id="city-select">
+    <select id="city-select" class="form-control">
       <option>北京</option>
       <option>上海</option>
       <option>广州</option>
@@ -62,10 +79,11 @@
     </select>
   </fieldset>
 
+</div>
   <div class="aqi-chart-wrap" id="aqi-chart-wrap">
 
   </div>
     
-  
+  <script src="Task_17.js" defer=true></script>
 </body>
 </html>
