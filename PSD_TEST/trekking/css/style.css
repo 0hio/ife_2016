@@ -1,0 +1,445 @@
+* {
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-family: 'QuicksandBold';
+}
+
+
+@font-face {
+	font-family: QuicksandBold;
+	src: url('Quicksand-Bold.ttf');
+}
+
+@font-face {
+	font-family: MyriadPro;
+	src: url('MyriadPro-Regular.otf');
+}
+
+body {
+	width:1280px;
+	margin:0 auto;
+	background-color: rgb(240,240,240)
+}
+
+.wrap {
+	width:100%;
+}
+
+.home {
+	background: url(../img/home.jpg) no-repeat center 0px;
+	height: 790px;
+	color: #fff;
+	width: 100%;
+}
+
+.home header {
+	height: 50px;
+	padding: 20px 0 0 0;
+}
+
+.home header nav {
+	width: 100%;
+  height: 100%;
+}
+
+.home header .left {
+	background: url(../img/logo.png) no-repeat;
+	height: 40px;
+	width: 53px;
+	float:left;
+	margin: 14px 0 0 64px;
+}
+
+
+.home header .right {
+	width: 320px;
+	height: 100%;
+	float:right;
+	margin: 14px 28px 0 0;
+
+}
+
+.home header .right ul {
+	height: 100%;
+}
+
+.home header .right ul li {
+	display: inline-block;
+	list-style: none;
+	line-height: 50px;
+	margin: 0 23px;
+}
+
+.home header .right ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+}
+
+.home header .right ul li div {
+	background: url(../img/logo2.png) no-repeat;
+	width: 24px;
+	height: 20px; 
+	display: inline-block;
+	margin-bottom: -5px;
+}
+
+.home .introduce {
+	width: 80%;
+	margin: 224px auto 0 auto;
+	text-align: center;
+	letter-spacing: -1px;
+}
+
+.home .introduce h1 {
+	font-size: 60px;
+}
+
+.home .introduce p {
+	font-family: "MyriadPro";
+	color: #efefef;
+	font-size:20px;
+	letter-spacing: 1px;
+	margin-top: 2px;
+}
+
+.home .introduce>img {
+	margin: 272px auto 0 auto;
+	cursor: pointer;
+}
+
+.home .introduce>a {
+	margin-top: 245px;
+	display: inline-block;
+}
+
+.alpha{
+	background:rgba(0,0,0,0.3);
+	height:100%;
+}
+
+.show {
+	width:100%;
+	/*height: auto;*/
+	background-color: rgb(255,255,255);
+	min-height: 300px;
+}
+
+.show .seleteBar {
+	height: 144px;	
+	background-color: rgb(245,246,247);
+	margin-bottom: 83px;
+
+}
+
+.show .seleteBar input[type=checkbox] {
+	display: none;
+}
+
+.show .seleteBar label {
+	width:20px;
+	height:20px;
+	display: inline-block;
+	border:2px solid rgb(170,155,119);
+	border-radius: 3px;
+	background: url(../img/gou.png) no-repeat;
+	margin-right: 13px;
+	cursor: pointer;
+}
+
+.checkBox {
+	width: 440px;
+	height:24px;
+	padding:60px 0 0 96px;
+}
+
+.checkBox>span {
+	vertical-align: 6px;
+	font-size: 18px;
+	margin-right: 32px;
+
+}
+
+.show .seleteBar>span {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.show .mainClothes:last-child {
+	padding-bottom: 100px;
+	margin-bottom: 0;
+}
+
+
+.show .seleteBar>span{
+	display: inline-block;
+	float: right;
+	width: 204px;
+	height: 52px;
+	background-color: rgb(170,155,119);
+	border-radius: 2px;
+	color: rgb(255,255,255);
+	font-size: 14px;
+	text-align: center;
+	box-sizing: border-box;
+	line-height: 52px;
+	margin: -37px 96px 0 0;
+}
+
+
+
+
+/* clothes show  */
+
+
+
+.right {
+	float:right;
+}
+
+.left {
+	float: left;
+}
+
+
+
+
+.mainClothes {
+	width: 1088px;
+	margin: 0 auto 88px auto;
+	overflow: hidden;
+
+}
+
+.sexTitle {
+	font-size: 20px;
+	color: #424242;
+}
+
+.sexWidth {
+	width: 996px;
+	height: 2px;
+	background-color: rgb(204,204,204);
+	display: inline-block;
+	margin-top: 12px;
+}
+
+.pagesClothes {
+	width: 37px;
+	height: 43px;
+	color: #aa9b77;
+	text-align: center;
+	clear:both;
+	margin:33px 0 14px 0;
+}
+
+.pagesClothes p:last-child span{	
+	cursor: pointer;
+	margin: 0 2px;
+}
+
+.mainClothes>ul {
+	width: 5697px;
+	height:379px;
+	overflow: hidden;
+	font-size: 0;
+	position: relative;
+	right: 0px;
+}
+
+.mainClothes>ul>li{
+	width: 320px;
+	height: 378px;
+	background-color: #f5f6f7;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	margin-right: 64px;
+	box-sizing: border-box;
+	border:6px solid #f5f6f7;
+}
+
+.mainClothes ul li:last-child {
+	margin-right: 0;
+}
+
+.mainClothes ul li a img {
+	position: relative;
+	top: 7%;
+}
+
+.upClothes {
+	height: 22px;
+	padding: 20px 25px 0 18px;
+	position: relative;
+}
+
+.sizeClothes {
+	font-size: 16px;
+	color: #424242;
+	cursor: pointer;
+}
+
+.sizeClothes:after {
+	content:"";
+	width: 12px;
+	height: 8px;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: 1px;
+	background: url(../img/black.png) no-repeat;
+	margin-left:4px;
+}
+
+.colorClothes {
+	display: inline-block;
+	height: 22px;
+	margin-right: -5px;
+}
+
+.colorClothes img{
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+
+
+.infoClothes {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	bottom: 14px;
+
+}
+
+.infoClothes .left {
+	font-size: 18px;
+	color:#aa9b77;
+	padding-left: 17px;
+}
+
+.infoClothes .right {
+	font-size: 22px;
+	color: #424242;
+	padding-right: 19px;
+}
+
+
+
+/* footer */
+.footer {
+	width:100%;
+	height: 823px;
+}
+
+.footer .about {
+	text-align: center;
+}
+
+.footer .about span {
+	display: inline-block;
+	margin-top: 67px;
+	font-size: 20px;
+	padding: 0 10px;
+	background-color: rgb(170,155,119);
+}
+
+.footer .about p{
+	border:2px solid rgb(131,118,89);
+	width: 713px;
+	height: 252px;
+	box-sizing: border-box;
+	margin: -14px auto 0 auto;
+	padding: 80px 20px 0 20px;
+	line-height: 25px;
+}
+
+.footer .about {
+	height: 402px;
+	background-color: rgb(170,155,119);
+}
+
+.footer .aboutNext {
+	width:100%;
+	height: 73px;
+	color: #fff;
+	font-size: 16px;
+	background-color: rgb(83,82,83);
+}
+
+.footer .aboutNext p {
+	line-height: 67px;
+	margin-left: 60px;
+
+}
+
+.footer .aboutNext p:before {
+	content: "";
+	display: inline-block;
+	background: url(../img/tw.png) no-repeat;
+	width:29px;
+	height: 24px;
+	vertical-align: -8px;
+	margin-right: 25px;
+}
+
+footer {
+	height: 325px;
+	color: #fff;
+	background-color: rgb(66,66,66);
+}
+
+footer .footerLeft {
+	width: 310px;
+	height:130px;
+	text-align: left;
+	float:left;
+	text-transform: uppercase;
+	margin: 100px 0 0 65px;
+}
+
+footer .footerLeft h2 {
+	font-size: 20px;
+}
+
+footer .footerLeft small {
+	font-size: 10px;
+	line-height: 19px;
+	display: inline-block;
+	margin-top: 14px;
+}
+
+footer .footerRight {
+	float: right;
+	margin: 145px 64px 0 0;
+	text-align: right;
+}
+footer .footerRight ul li {
+	display: inline-block;
+	border-right: 2px solid rgb(170,155,119);
+	padding-right: 5px;
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+
+footer .footerRight>p {
+	font-size: 18px;
+	
+}
+
+footer .footerRight ul li:last-child {
+	border-right: none;
+	padding-right: 0px;
+}
+
+
+
+
+
+
+
+
+

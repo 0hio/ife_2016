@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+a:visited {
+	color: inherit;
+}
+
+a {
+	color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

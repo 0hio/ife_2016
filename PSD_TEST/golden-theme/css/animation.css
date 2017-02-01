@@ -1,0 +1,34 @@
+#S img {
+	transition: 1s;
+	transform: rotateY(0deg);
+}
+
+#S img:hover {
+	transform: rotateY(180deg);
+}
+
+#P li::after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 300px;
+	background: rgba(0,0,0, 0.4);
+	position: absolute;
+	top: 0%;
+	left: 0;
+}
+
+#P li:hover::after {
+	background: rgba(0,0,0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+

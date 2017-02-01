@@ -1,0 +1,57 @@
+.mainClothes>ul>li:hover {
+	border:6px solid #aa9b77;
+	box-sizing: border-box;
+}
+
+.sizeClothesSele {
+	font-size: 16px;
+	position: absolute;    
+	/*如果不用absolute的话, 其他元素
+		会收到印象*/
+	height: 80px;
+	width: 46px;
+	top: 40px;
+	/*visibility: hidden;*/
+	opacity:0;
+	transition: .8s;
+}
+
+.sizeClothesSele>li {
+	background-color: transparent;
+	color: #000;
+	border:1px solid #000;
+	box-sizing: border-box;
+	margin-top: 3px;
+	cursor: pointer;
+}
+
+.sizeClothesSele:hover,
+.sizeClothes:hover+ul {
+	opacity:.9;
+
+	/*visibility: visible;*/
+}
+
+.sizeClothesSele>li:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+#menUl,
+#womenUl {
+	transition: .5s;
+	transform: translateX(-0px);
+}
+
+.curColor {
+	border:1px solid #000;
+	border-radius: 30px;
+	padding: 3px;
+}
+
+
+
+
+
+
+

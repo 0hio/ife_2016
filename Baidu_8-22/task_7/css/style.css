@@ -25,6 +25,7 @@ nav{
 	font-size: 25px;
 	margin:15px 0 0 70px;
 	background: url(../img/logo.jpg) no-repeat left;
+	cursor: pointer;
 }
 .nav_left span{
 	margin-left: 45px;
@@ -35,6 +36,8 @@ nav{
 	font-size: 14px;
 	line-height: 3;
 	margin-right: 24px;
+	width: 65px;
+	height: 56px;
 }
 .nav_right ul li:first-child{
 	border-bottom: 4px solid #ED8476;
@@ -43,8 +46,9 @@ nav{
 	padding-bottom: 10px;
 }
 #login{
-	background: url(../img/login.jpg) no-repeat left;
+	background: url(../img/login.jpg) no-repeat left 13px;
 	padding-left: 20px;
+	cursor: pointer;
 }
 .nav_right{
 	float: right;
@@ -76,6 +80,7 @@ nav{
 	text-align: center;
 	color: #FFF;
 	border: none;
+	cursor: pointer;
 }
 
 
@@ -96,10 +101,10 @@ nav{
 	margin-top: 50px;
 }
 .layer_2 div p{
-	width:220px;
+	width: 300px;
 	margin-top: 40px;
 	border-right: 2px solid #A0A0A0;	
-    padding:0 50px 0 50px;
+  padding:0 50px 0 50px;
 }
 
 .layer_3{
@@ -159,18 +164,21 @@ nav{
 	float: right;
 	margin: 10px 5px 0 0;
 }
+
 .select .item_select{
 	display: block;
 	position: absolute;
-}
-.select .item_select{
 	background: #E3E3E4;
-	width:241px;
+	width: 236px;
 	border: 1px solid #CF5F59;
 	border-top: none;
-	margin-top: -3px;
-	margin-left: -6px;
+	margin: -3px 0 0 -6px ;
+	transition: 1s;
+	display: none;
 }
+
+
+
 .select .item_select ul{
 	list-style: none;
 }
@@ -249,6 +257,7 @@ nav{
 	text-align: center;
 	width: 501px;
 	margin-top: 120px;
+	overflow: hidden;
 }
 .layer_6 .layer_6_right h2 span{
 	color: #e7504d;
@@ -258,9 +267,29 @@ nav{
 	text-align: left;
 	line-height: 30px;
 }
-.layer_6 .layer_6_right img{
-	margin-top: 30px;
+
+
+.layer_6 .layer_6_right>ul{
+	width: 110px;
+	height: 20px;
+	margin: 20px auto 0 auto;
 }
+
+.layer_6_right>ul>li{
+	width: 10px ;
+	height:  10px;
+	border-radius: 10px;
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 10px;
+	border: 1px solid #ccc;
+}
+
+.curPage {
+	background: #9A9393;;
+}
+
+
 .button_1{
 	cursor: pointer;
 	border: 1px solid #e5666a;
@@ -317,6 +346,7 @@ nav{
 	line-height: 40px;
 	margin-top: 40px;
 	border: 1px solid;
+	cursor: pointer;
 }
 .layer_7 #nd2 .button{
 	color:#e95a58;
@@ -352,30 +382,41 @@ nav{
 	margin: 0 auto;
 	color: #B3AFAC;
 }
+
 .layer_8_left{
 	width: 25%;
 	display: inline-block;
 	margin-left: 30px;
 }
+
+.layer_8_left_1 p{
+	height: 55px;
+	overflow: hidden;
+}
+
 .layer_8_left span{
 	float: right;
 	cursor: pointer;
-	background: url(../img/down.jpg) no-repeat left;
 	padding-left: 10px;
 	color: #9d9b9a;
 	font-size: 13px;
 }
+
 .layer_8_left h3{
 	font-size: 17px;
 	font-weight: normal;
 	color: #231815;
 	margin-top: 60px;
 }
+
 .layer_8_left p{
 	font-size: 13px;
 	color:#9d9b9a;
 	width: 300px;
 	margin:10px 0;
+	height: 55px;
+	overflow: hidden;
+	transition: .5s;
 }
 
 .layer_8_right{
@@ -469,8 +510,83 @@ nav{
 }
 .layer_9 footer span+span{
 	float: right;
+	cursor: pointer;
 }
 
+
+.nav_right ul li:hover:not(:first-child):not(:last-child) {
+	border-bottom: 4px solid #ED8476;
+	width: 65px;
+	padding-bottom: 10px;
+}
+
+
+
+.layer_cover {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.6);
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.loginUi {
+	width: 330px;
+	height: 180px;
+	background: #fff;
+	margin: 18% auto 0 auto;
+}
+
+.loginUi p {
+	font-size: 30px ;
+	background: #e74f4d;
+	color: #fff;
+	text-align: center;
+}
+
+.loginUi .X {
+	margin-top: -100px;
+	font-size: 55px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.loginUi .input label {
+	width: 80px;
+	display: inline-block;
+	text-align: right;
+	margin: 15px 15px 0 0px;
+}
+
+.loginUi input[type='submit'] {
+	width: 100px;
+	height: 30px;
+	background: #5F5F60;;
+	color: #fff;
+	border: none;
+	margin: 17px auto 0 auto;
+	display: block;
+}
+
+.loginUi input[type='submit']:active {
+	transform :translate(1px,1px);
+	box-shadow: 1px 0px 0px #234;
+}
+
+
+.wordWall {
+	display: inline-block;
+	width: 256%;
+	transform: translateX(0px);
+	transition: .5s;
+}
+
+.wordWall div {
+	display: inline-block;
+	width: 400px;
+}
 
 
 
