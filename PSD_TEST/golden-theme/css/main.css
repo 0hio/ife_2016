@@ -357,9 +357,10 @@ small {
 }
 
 .ads>ul {
-	width: 55%;
-	height: 50px;
+	width: 60%;
+	height: 100%;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .ads>ul>li {
