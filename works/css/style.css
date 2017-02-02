@@ -10,9 +10,10 @@ body {
 
 .wrap {
 	width:800px;
-	margin: 0px 140px 0px auto;
+	margin: 0px 140px 0px 110px;
 	font-size:20px;
 	background-color: #fff;
+	float: left;
 }
 
 .wrap h1:first-child {
@@ -41,7 +42,6 @@ body {
 }
 
 .js-type {
-	border-top: 3px solid #234;
 	margin-top:60px;
 }
 
